@@ -1,0 +1,481 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Arvo";
+    src: url("../fonts/Arvo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+#parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 0.5fr;
+    min-height: 100vh;
+}
+
+#child1 {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: white;
+}
+
+#child1 #child1_info {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 20px;
+    align-self: center;
+}
+
+#child1 #child1_info #iphone6s {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+    letter-spacing: 2px;
+}
+
+#child1 #child1_info h3 {
+    font-family: "Arvo";
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#child1 #child1_info #visit_apple_store {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: rgb(159, 163, 167);
+    font-weight: 400;
+}
+
+#child1 img {
+    width: 38%;
+    margin-top: 0px;
+}
+
+#child2 {
+    grid-area: 1 / 3 / 2 / 5;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 248, 249);
+    row-gap: 15px;
+    overflow: hidden;
+}
+
+#child2 p {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#child2 h1 {
+    text-align: center;
+    text-wrap: balance;
+    font-family: "Arvo";
+    font-size: 48px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+
+#child2 a {
+    color: rgb(39, 185, 194);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+#child3 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 86, 56);
+    overflow: hidden;
+}
+
+#child3 h3 {
+    color: white;
+    font-family: "Arvo";
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+#child3 a {
+    color: rgb(255, 200, 10);
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+}
+
+#child3 a strong {
+    font-size: 16px;
+}
+
+#child3 img {
+    width: 90%;
+}
+
+#child4 {
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 68px;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#child4 div {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#child4 #child4_div1 {
+    justify-content: space-between;
+    height: 100%;
+}
+
+#child4 #child4_div1 p {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#child4 #child4_div1 h3 {
+    font-family: "Arvo";
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    line-height: 1.5;
+    font-weight: 400;
+    text-wrap: balance;
+}
+
+#child4 #child4_div1 img {
+    width: 220%;
+    position: relative;
+    left: -140%;
+    z-index: -1;
+}
+
+#child4 #child4_div2 {
+    width: 40%;
+}
+
+#child4 #child4_div2 p {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: rgb(159, 163, 167);
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-wrap: balance;
+}
+
+#child4 #child4_div2 a {
+    color: rgb(39, 185, 194);
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+}
+
+#child4 #child4_div2 a strong {
+    font-size: 16px;
+}
+
+#child5 {
+    grid-area: 2 / 4 / 4 / 5;
+    padding-top: 50px;
+    background-color: rgb(143, 118, 188);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+#child5 #floppy_div {
+    border-radius: 50%;
+    width: 371px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    padding: 25%;
+    background-color: rgb(129, 102, 176);
+}
+
+#child5 #floppy_div div {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: rgb(139, 114, 182);
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+#child5 #floppy_div div img {
+    height: 45%;
+}
+
+#child5 #floppy_div div span {
+    color: white;
+    font-size: 10px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+#child5 #floppy_div>img {
+    width: 100%;
+}
+
+#child5 #floppy_div p {
+    color: white;
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+#child5 h2 {
+    color: white;
+    font-size: 32px;
+    font-family: "Arvo";
+    font-weight: 700;
+    margin-bottom: -30px;
+}
+
+#child5>p {
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 26px;
+    text-align: center;
+    text-wrap: balance;
+}
+
+#child5 a {
+    padding: 14px 28px;
+    background-color: rgb(255, 200, 10);
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#child6 {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#child6 img {
+    width: 80%;
+    position: relative;
+    left: -10%;
+}
+
+#child6 h3 {
+    font-size: 22px;
+    font-family: "Arvo";
+    color: rgb(51, 51, 51);
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#child6 a {
+    color: rgb(39, 185, 194);
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#child6 a strong {
+    font-size: 16px;
+}
+
+#child7 {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: rgb(147, 182, 183);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#child7 p {
+    color: white;
+    font-size: 8px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 104, 79);
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+#child7 h3 {
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#child7 img[alt="laptop image"] {
+    width: 90%;
+    position: absolute;
+    bottom: 0px;
+    right: 16%;
+}
+
+#child7 img[alt="UX image"] {
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#child8 {
+    grid-area: 4 / 1 / 5 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 213, 244);
+    overflow: hidden;
+}
+
+#child8 div {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(53, 207, 237);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#child8 div img {
+    width: 20%;
+}
+
+#child8 div h3 {
+    color: white;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#child9 {
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    overflow: hidden;
+    height: 150px;
+}
+
+#child9 p {
+    color: white;
+    font-size: 8px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: rgb(123, 196, 36);
+}
+
+#child9 h3 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#child10 {
+    grid-area: 4 / 3 / 5 / 5;
+    background-color: rgb(44,44,44);
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    overflow: hidden;
+}
+
+#child10 img {
+    width: 40%;
+    position: relative;
+    left: -10%;
+}
+
+#child10 h3 {
+    color: white;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
